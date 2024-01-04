@@ -1,16 +1,16 @@
-const palleteContainer = document.getElementById('palleteContainer');
+const paletteContainer = document.getElementById('paletteContainer');
 const colorRange = document.getElementById('colorRange');
 const colorValues = ['1','2','3','4','6','7','8','9','A','B','C','D','E','F'];
-const PALLETE_SIZE = 5;
+const palette_SIZE = 6;
 
-const createPallete = () => {
-    palleteContainer.innerHTML = '';
-    for(let i = 0; i < PALLETE_SIZE; i++) {
-        const palleteElement = document.createElement('div');
-        palleteElement.classList.add('palleteItem');
-        palleteContainer.appendChild(palleteElement);
+const createpalette = () => {
+    paletteContainer.innerHTML = '';
+    for(let i = 0; i < palette_SIZE; i++) {
+        const paletteElement = document.createElement('div');
+        paletteElement.classList.add('paletteItem');
+        paletteContainer.appendChild(paletteElement);
     }
-    updatePallete();
+    updatepalette();
 }
 
 const colorize = (element) => {
@@ -23,10 +23,10 @@ const colorize = (element) => {
     element.innerHTML = `<span class='colorHex'>${color}</span>`;   
 }
 
-const updatePallete = () => {
-    for (let i = 0; i < palleteContainer.children.length; i++) {
-        colorize(palleteContainer.children[i])
+const updatepalette = () => {
+    for (let i = 0; i < paletteContainer.children.length; i++) {
+        colorize(paletteContainer.children[i])
     }
 };
 
-createPallete();
+createpalette();
