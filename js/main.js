@@ -29,4 +29,32 @@ const updatepalette = () => {
     }
 };
 
+const copyToClipboard = (id) => {
+    const firstPaletteItem = paletteContainer.children[id];
+    const colorHex = firstPaletteItem.querySelector('.colorHex').textContent;
+
+    // Crea un elemento de texto temporal
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = colorHex;
+    document.body.appendChild(tempTextArea);
+
+    // Selecciona y copiar el texto
+    tempTextArea.select();
+    document.execCommand('copy')
+
+    // Elimina el elemento de texto temporal
+    document.body.removeChild(tempTextArea);
+
+    Toastify({
+        text: '¡Color copiado al portapapeles!',
+        duration: 3000,
+        style: {
+            background: 'black',
+            fontFamily: 'Red Hat Display',
+            borderRadius: '10px',
+            letterSpacing: '1px'
+        }
+    }).showToast();
+};
+
 createpalette();

@@ -1,0 +1,15 @@
+@mixin w-h ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin dflex-col-cen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin dflex-col {
+    display: flex;
+    flex-direction: column;
+}

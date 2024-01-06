@@ -1,0 +1,35 @@
+header {
+    background-color: rgba(210, 219, 217, 0.832);
+    @include w-h(50%, 100px);
+    position: relative;
+    bottom: 30px;
+    
+    h1, h2 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    @include dflex-col-cen;
+    @include w-h(30%, 50px);
+    background-color: #000000e6;
+    border-radius: 10px;
+
+    a {
+        font-size: 25px;
+        color: white;
+    }
+}

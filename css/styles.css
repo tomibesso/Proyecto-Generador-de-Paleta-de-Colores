@@ -6,11 +6,13 @@ body {
   place-items: center;
   min-height: 100vh;
   font-weight: bold;
-  padding-top: 20px;
-  background: url(../assets/macro-paint-oil-blur-wallpaper-preview.jpg);
+  background: url(../assets/macro-paint-oil-blur-wallpaper-preview.jpg) fixed;
+  background-size: cover;
 }
 
 #paletteContainer {
+  position: relative;
+  bottom: 70px;
   width: 420px;
   display: flex;
   flex-direction: column;
@@ -29,11 +31,32 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   display: inline-block;
-  min-width: 80px;
-  height: 35px;
+  width: 25%;
+  height: 50px;
+  letter-spacing: 0.5px;
+}
+
+.divSVG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 270px;
+  right: 575px;
+  height: 300px;
+}
+.divSVG .buttonSVG {
+  background: none;
+}
+.divSVG .buttonSVG svg {
+  color: #000;
+  width: 25px;
+  height: 25px;
 }
 
 button {
+  position: relative;
+  bottom: 70px;
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
   letter-spacing: 4px;
@@ -45,6 +68,42 @@ button {
   color: #fff;
   border-radius: 4px;
   background: #000;
+}
+
+header {
+  background-color: rgba(210, 219, 217, 0.832);
+  width: 50%;
+  height: 100px;
+  position: relative;
+  bottom: 30px;
+}
+header h1, header h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+}
+header h1 {
+  font-size: 2em;
+}
+header h2 {
+  font-size: 1.8em;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  border-radius: 10px;
+}
+footer a {
+  font-size: 25px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
