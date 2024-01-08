@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1500px) {
+
+    header {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1066px) {
+    header {
+        height: 80px;
+
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    header {
+        width: 75%;
+        height: 65px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+    }
+
+    footer {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+    header {
+        @include w-h(90%, 60px);
+
+        h1 {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        #paletteContainer {
+          width: 90%;
+          margin: auto;
+
+          span {
+            width: 30%;
+          }
+        }
+
+        button {
+            width: 90%;
+            margin: 20px auto;
+        }
+    }
+
+    footer {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    header {
+        @include w-h(90%, 50px);
+
+        h1 {
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 10px;
+        }
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        #paletteContainer {
+          width: 90%;
+          margin: auto;
+
+          span {
+            width: 40%;
+          }
+        }
+
+        button {
+            width: 90%;
+            margin: 20px auto;
+        }
+    }
+
+    footer {
+        width: 70%;
+    }
+}

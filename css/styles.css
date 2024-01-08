@@ -40,10 +40,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  top: 270px;
-  right: 575px;
-  height: 300px;
 }
 .divSVG .buttonSVG {
   background: none;
@@ -104,6 +100,105 @@ footer {
 footer a {
   font-size: 25px;
   color: white;
+}
+
+@media only screen and (max-width: 1500px) {
+  header {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1066px) {
+  header {
+    height: 80px;
+  }
+  header h1 {
+    font-size: 22px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    width: 75%;
+    height: 65px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+  footer {
+    width: 55%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+  header {
+    width: 90%;
+    height: 60px;
+  }
+  header h1 {
+    font-size: 16px;
+  }
+  header h2 {
+    font-size: 14px;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main #paletteContainer {
+    width: 90%;
+    margin: auto;
+  }
+  main #paletteContainer span {
+    width: 30%;
+  }
+  main button {
+    width: 90%;
+    margin: 20px auto;
+  }
+  footer {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 424px) {
+  header {
+    width: 90%;
+    height: 50px;
+  }
+  header h1 {
+    font-size: 12px;
+  }
+  header h2 {
+    font-size: 10px;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main #paletteContainer {
+    width: 90%;
+    margin: auto;
+  }
+  main #paletteContainer span {
+    width: 40%;
+  }
+  main button {
+    width: 90%;
+    margin: 20px auto;
+  }
+  footer {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
