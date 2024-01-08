@@ -3,13 +3,19 @@
     height: $height;
 }
 
-@mixin dflex-col-cen {
+@mixin dflex-cen-spbt {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
 
 @mixin dflex-col {
     display: flex;
     flex-direction: column;
+}
+
+@mixin dflex-cen-spar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

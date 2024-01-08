@@ -29,8 +29,7 @@
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
     header {
-        width: 75%;
-        height: 65px;
+        @include w-h(75%, 65px);
 
         h1 {
             font-size: 18px;
@@ -73,7 +72,7 @@
           }
         }
 
-        button {
+        .generateButton {
             width: 90%;
             margin: 20px auto;
         }
@@ -111,7 +110,7 @@
           }
         }
 
-        button {
+        .generateButton {
             width: 90%;
             margin: 20px auto;
         }

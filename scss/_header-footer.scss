@@ -23,7 +23,7 @@ header {
 footer {
     position: absolute;
     bottom: 30px;
-    @include dflex-col-cen;
+    @include dflex-cen-spar;
     @include w-h(30%, 50px);
     background-color: #000000e6;
     border-radius: 10px;
